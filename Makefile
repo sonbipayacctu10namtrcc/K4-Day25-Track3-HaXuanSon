@@ -10,7 +10,7 @@ typecheck:
 	mypy src
 
 run-chaos:
-	python scripts/run_chaos.py --config configs/default.yaml --out reports/metrics.json
+	python scripts/run_chaos.py --config configs/default.yaml --out reports/metrics.json --seed 1
 
 report:
 	python scripts/generate_report.py --metrics reports/metrics.json --out reports/final_report.md

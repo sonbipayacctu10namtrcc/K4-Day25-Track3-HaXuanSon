@@ -13,7 +13,7 @@ circuit_breaker:
   success_threshold: 1
 cache:
   enabled: true
-  backend: memory          # "memory" (default) or "redis" (requires docker compose up -d)
+  backend: redis           # "memory" (default) or "redis" (requires docker compose up -d)
   ttl_seconds: 300
   similarity_threshold: 0.92
   redis_url: "redis://localhost:6379/0"
